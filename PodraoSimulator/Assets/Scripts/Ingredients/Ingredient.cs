@@ -7,4 +7,5 @@ public class Ingredient : ScriptableObject {
     public string name;
     public int quantity;
     public float price;
+
 }
