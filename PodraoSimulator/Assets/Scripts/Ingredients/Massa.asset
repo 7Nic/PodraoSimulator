@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Massa
   m_EditorClassIdentifier: 
   name: Massa
-  quantity: 1
+  quantity: 8
   price: 2
-  diplay: {fileID: 8809282628390291602, guid: abc126707fdc66ea3b69ddbac12b3f77, type: 3}
+  workers: 0

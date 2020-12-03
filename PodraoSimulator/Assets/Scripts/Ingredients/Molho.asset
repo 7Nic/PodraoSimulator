@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Molho
   m_EditorClassIdentifier: 
   name: Molho de Tomate
-  quantity: 0
+  quantity: 14
   price: 2
+  workers: 0

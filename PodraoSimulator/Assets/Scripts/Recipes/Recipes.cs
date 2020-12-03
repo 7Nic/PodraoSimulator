@@ -7,6 +7,7 @@ public class Recipe : ScriptableObject {
     public string name;
     public Ingredient[] ingredients;
     public float sellPrice;
+    public int workers = 0;
 
     public bool checkIng() {
         foreach (var i in ingredients) {
@@ -19,5 +20,9 @@ public class Recipe : ScriptableObject {
         foreach (var i in ingredients) {
             i.quantity--;
         }
+    }
+
+    public void Reset() {
+        workers = 0;
     }
 }

@@ -18,3 +18,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a409ec6b07b62c315b0069e5117b36d6, type: 2}
   - {fileID: 11400000, guid: 55aab1e36b402b0d4ab214897e978b53, type: 2}
   sellPrice: 5
+  workers: 0
