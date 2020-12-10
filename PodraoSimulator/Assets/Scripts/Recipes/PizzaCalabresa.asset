@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9711d9889bc5931319f8c532be79be28, type: 3}
+  m_Name: PizzaCalabresa
+  m_EditorClassIdentifier: 
+  name: Pizza
+  ingredients:
+  - {fileID: 11400000, guid: 6027d6aa9bfa35effbbf2f3d4555459f, type: 2}
+  - {fileID: 11400000, guid: 71a5c76671296694bb451a44e4c1d9b8, type: 2}
+  - {fileID: 11400000, guid: 29f53f662ad5401fe9107e2cf3740e87, type: 2}
+  - {fileID: 11400000, guid: 55aab1e36b402b0d4ab214897e978b53, type: 2}
+  ingQuant: 01000000010000000100000001000000
+  sellPrice: 20
+  workers: 0

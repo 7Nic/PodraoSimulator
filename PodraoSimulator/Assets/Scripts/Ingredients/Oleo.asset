@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Oleo
   m_EditorClassIdentifier: 
   name: Oleo
-  quantity: 0
-  price: 5
+  quantity: 1
+  price: 1
   workers: 0

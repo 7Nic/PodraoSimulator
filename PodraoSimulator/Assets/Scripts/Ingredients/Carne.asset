@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Carne
   quantity: 1
-  price: 15
+  price: 4
+  workers: 0

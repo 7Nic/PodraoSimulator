@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Massa
   m_EditorClassIdentifier: 
   name: Massa
-  quantity: 8
-  price: 2
+  quantity: 9
+  price: 1
   workers: 0

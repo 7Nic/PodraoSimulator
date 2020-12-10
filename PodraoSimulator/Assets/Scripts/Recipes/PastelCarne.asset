@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 9711d9889bc5931319f8c532be79be28, type: 3}
   m_Name: PastelCarne
   m_EditorClassIdentifier: Assembly-CSharp::Recipe
   name: Pastel de Carne
@@ -17,4 +17,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6027d6aa9bfa35effbbf2f3d4555459f, type: 2}
   - {fileID: 11400000, guid: 37c5dcb8e96cf3180aa7ed2f9f96b7df, type: 2}
   - {fileID: 11400000, guid: 55aab1e36b402b0d4ab214897e978b53, type: 2}
-  sellPrice: 5
+  ingQuant: 010000000100000001000000
+  sellPrice: 13
+  workers: 0

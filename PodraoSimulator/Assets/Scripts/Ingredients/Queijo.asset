@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Queijo
   quantity: 1
-  price: 5
+  price: 2
   workers: 0
