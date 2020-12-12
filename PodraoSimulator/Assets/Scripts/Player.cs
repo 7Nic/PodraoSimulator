@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Threading;
 
 [CreateAssetMenu(menuName = "Player")]
 public class Player : ScriptableObject {
@@ -10,25 +11,39 @@ public class Player : ScriptableObject {
     public int totalWorkers;
     public float workerPrice;
     float  baseWorkerPrice = 100;
+    public Semaphore mutex = new Semaphore(1,1);
 
     public void Reset() {
-        money = 0;
-        workers = 0;
-        totalWorkers = 0;
+        money = 100;
+        workers = 1;
+        totalWorkers = 1;
         workerPrice = baseWorkerPrice;
     }
-
-    public void Buy(Ingredient ing) {
-        if(money >= ing.price) {
+    
+    //semaforos dentro da função buy, para caso a funcao seja chamada pelo jogador ou pela thread, funcione da mesma forma
+    public void Buy(Ingredient ing) {//produtor
+        ing.empty.Wait();
+        mutex.WaitOne();
+        if(money >= ing.price) {//regiao critica, subtrai o dinheiro
             money -= ing.price;
             ing.quantity++;
         }
+        mutex.Release();
+        ing.full.Release();
     }
 
-    public void Sell(Recipe rec) {
+    public void Sell(Recipe rec) { //consumidor
+        foreach(var ing in rec.ingredients) {//para cada ingrediente da receita, da wait no semaforo full
+            ing.full.Wait();
+        }
+
         if(rec.checkIng()) {
             rec.makeRecipe();
             money += rec.sellPrice;
+        }
+
+        foreach(var ing in rec.ingredients) {
+            ing.empty.Release();
         }
     }
 

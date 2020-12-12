@@ -118,19 +118,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1719844279274178410}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 5fa5f94c23f56bbfc9b54d7a9ee0eecf, type: 2}
-        m_MethodName: RemoveWorkerRec
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 3d9b33ede3f136373bed8b4a9272108e,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Recipe, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1226858888270801276
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,19 +237,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8833678650554738956}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 5fa5f94c23f56bbfc9b54d7a9ee0eecf, type: 2}
-        m_MethodName: AddWorkerRec
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 3d9b33ede3f136373bed8b4a9272108e,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Recipe, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1659712447345776281
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,19 +434,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 9070928470713287462}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 5fa5f94c23f56bbfc9b54d7a9ee0eecf, type: 2}
-        m_MethodName: Sell
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 3d9b33ede3f136373bed8b4a9272108e,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: Recipe, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &2452446474042358754
 GameObject:
   m_ObjectHideFlags: 0

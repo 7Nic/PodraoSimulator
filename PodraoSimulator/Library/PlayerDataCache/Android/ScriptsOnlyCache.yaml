@@ -73,43 +73,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11292}
     - Class: 114
-      Script: {instanceID: 11492}
+      Script: {instanceID: 11360}
     - Class: 114
-      Script: {instanceID: 11582}
+      Script: {instanceID: 11494}
     - Class: 114
-      Script: {instanceID: 11636}
+      Script: {instanceID: 11584}
     - Class: 114
-      Script: {instanceID: 11870}
+      Script: {instanceID: 11638}
     - Class: 114
-      Script: {instanceID: 12304}
+      Script: {instanceID: 11872}
     - Class: 114
-      Script: {instanceID: 12356}
+      Script: {instanceID: 12306}
     - Class: 114
-      Script: {instanceID: 12624}
+      Script: {instanceID: 12358}
     - Class: 114
-      Script: {instanceID: 12656}
+      Script: {instanceID: 12626}
     - Class: 114
-      Script: {instanceID: 12988}
+      Script: {instanceID: 12658}
     - Class: 114
-      Script: {instanceID: 13152}
+      Script: {instanceID: 12990}
     - Class: 114
-      Script: {instanceID: 13350}
+      Script: {instanceID: 13154}
     - Class: 114
-      Script: {instanceID: 13354}
+      Script: {instanceID: 13352}
     - Class: 114
-      Script: {instanceID: 13372}
+      Script: {instanceID: 13356}
     - Class: 114
-      Script: {instanceID: 13668}
+      Script: {instanceID: 13374}
     - Class: 114
-      Script: {instanceID: 13770}
+      Script: {instanceID: 13670}
     - Class: 114
-      Script: {instanceID: 14048}
+      Script: {instanceID: 13772}
     - Class: 114
-      Script: {instanceID: 14382}
+      Script: {instanceID: 14050}
     - Class: 114
-      Script: {instanceID: 15360}
+      Script: {instanceID: 14274}
     - Class: 114
-      Script: {instanceID: 18746}
+      Script: {instanceID: 14386}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -151,6 +151,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AudioPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 86f9ea483ca4065fc03a3d3dc9af369e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IngredientSetter
   - hash:
       serializedVersion: 2
       Hash: b4fc42b020df4b67385e61ff21d513cc
@@ -561,6 +567,12 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
+      Hash: 9f2326f7b7a2af36870e5333dca2971a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RecipeSetter
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -631,19 +643,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 86f9ea483ca4065fc03a3d3dc9af369e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: IngredientSetter
-  - hash:
-      serializedVersion: 2
-      Hash: 9f2326f7b7a2af36870e5333dca2971a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RecipeSetter
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: /home/satoshi/Documents/USP/SO/PodraoSimulator/PodraoSimulator/build/PodraoSimulador1.1.0.apk
+  playerPath: /home/satoshi/Documents/USP/SO/PodraoSimulator/PodraoSimulator/build/PodraoSimulador1.3.0.apk

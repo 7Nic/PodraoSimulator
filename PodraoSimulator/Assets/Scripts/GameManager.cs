@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour {
     [SerializeField] TextMeshProUGUI workerText;
     bool Running;
 
+    
+
     // Update is called once per frame
     void Update() {
         moneyText.text = "Dinheiro: R$ " + player.money + "\n" +
@@ -22,6 +24,8 @@ public class GameManager : MonoBehaviour {
 
     void Start() {
         Running = true;
+
+        MasterReset();
 
         Thread p0 = new Thread(()=>Produtor(0));
         Thread p1 = new Thread(()=>Produtor(1));
@@ -60,9 +64,7 @@ public class GameManager : MonoBehaviour {
     void Produtor(int i) {
             while (Running) {
                 if (ingredients[i].workers != 0) {
-                    ingredients[i].empty.Wait();
                     player.Buy(ingredients[i]);
-                    ingredients[i].full.Release();
                     Thread.Sleep(2000 / ingredients[i].workers);
                 }
             }
@@ -71,14 +73,7 @@ public class GameManager : MonoBehaviour {
     void Consumidor(int i) {
         while (Running) {
             if (recipes[i].workers != 0) {
-                foreach(var ing in recipes[i].ingredients)
-                    ing.full.Wait();
-
                 player.Sell(recipes[i]);
-
-                foreach(var ing in recipes[i].ingredients)
-                    ing.empty.Release();
-
                 Thread.Sleep(5000 / recipes[i].workers);
             }
         }
